@@ -1,0 +1,15 @@
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\bin\Debug\net8.0\Bank.exe
+C:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\bin\Debug\net8.0\Bank.deps.json
+C:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\bin\Debug\net8.0\Bank.runtimeconfig.json
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\bin\Debug\net8.0\Bank.dll
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\bin\Debug\net8.0\Bank.pdb
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.AssemblyInfoInputs.cache
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.AssemblyInfo.cs
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.csproj.CoreCompileInputs.cache
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.sourcelink.json
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.dll
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\refint\Bank.dll
+c:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.pdb
+C:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\Bank.genruntimeconfig.cache
+C:\Users\templ\OneDrive\Cours - Ifosup\2ième année\Programmation orientée objet\Bank\obj\Debug\net8.0\ref\Bank.dll
