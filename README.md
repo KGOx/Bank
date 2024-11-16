@@ -83,3 +83,12 @@ qui additionnera le solde avec le retour de la méthode « CalculInterest ».
 
 19. Au niveau de la classe "Current" :
 • Au niveau de la propriété "CreditLine", déclenchez une exception de type "ArgumentOutOfRangeException" si la valeur n'est pas supérieur ou égale à 0 (zéro).
+
+20. Dans la classe "Account" :
+• Ajoutez un événement appelé "NegativeBalanceEvent" dont le délégué "NegativeBalanceDelegate" devra recevoir en paramètre un objet de type "Account" et ne rien renvoyer.
+
+21. Au niveau de la classe "Current" :
+• Déclenchez l'évènement "NegativeBalanceEvent" si le compte passe en négatif et uniquement dans ce cas.
+
+22. Au niveau de la classe "Bank" :
+• Ajouter une méthode qui traitera l'évènement "NegativeBalanceAction" en affichant dans ma console "Le numéro de compte {Number} vient de passer en négatif".
