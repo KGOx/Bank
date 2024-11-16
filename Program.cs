@@ -1,6 +1,4 @@
-﻿// Créer une classe "personne" implémentant : Les propriétés publiques - String firstname, string lastname, datetime birthdate
-
-Personne personne = new();
+﻿Personne personne = new();
 personne.Firstname = "Gérard";
 personne.Lastname = "Menvusa";
 personne.Birthdate = new DateTime(1997, 5, 20);
@@ -37,6 +35,27 @@ class Bank { // La classe Bank représente une banque qui peut gérer plusieurs 
         Name = name;
     }
 
+    // Méthode qui retourne le solde de tous les comptes d'un seul "owner"
+    public double GetAllAccountBalance(Personne Owner)
+    {
+        double totalBalance = 0;
+        bool OwnerFound = false;
+        
+        foreach (var account in Accounts.Values)
+        {
+            if (Owner == account.Owner)
+            {
+            OwnerFound = true;
+            totalBalance += account.Balance;
+            }
+        }
+        if (!OwnerFound)
+        {
+            throw new ArgumentException("Aucun client de ce nom");
+        }
+        return totalBalance;
+    }
+
     // Méthode pour ajouter un compte dans le dictionnaire
     public void AddAccount(CurrentAccount account)
     {
@@ -48,6 +67,16 @@ class Bank { // La classe Bank représente une banque qui peut gérer plusieurs 
 
         Accounts[account.Number] = account; // Ajoute un nouveau compte si inexistant
         Console.WriteLine($"Compte {account.Number} ajouté avec succès."); // Account.number = clé | account = valeur
+    }
+
+    // Méthode qui retourne le solde d'un compte courant
+    public double GetAccountBalance(string accountNumber)
+    {
+        if (!Accounts.ContainsKey(accountNumber))
+        {
+            throw new ArgumentException("Le compte spécifié n'existe pas.");
+        }
+        return Accounts[accountNumber].Balance; 
     }
 
     // Méthode pour supprimer un compte
@@ -118,11 +147,3 @@ class CurrentAccount {
         Console.WriteLine($"Dépôt de {amount} effectué. Nouveau solde : {Balance}");
     }
     }
-
-
-// Ex2
-// Créer une classe "CurrentAccount" qui permet la gestion d'un compte courant implémentant :
-// Les propriétés publiques 
-//     - string number, double balance (lecture seule), double CreditLine, Person Owner
-// Les méthodes publiques 
-//     - void Withdraw (double amount), void Deposit(double amount)
