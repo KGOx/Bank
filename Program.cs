@@ -46,8 +46,8 @@ class Bank { // La classe Bank représente une banque qui peut gérer plusieurs 
             return;
         }
 
-        Accounts[account.Number] = account; //Ajoute un nouveau compte si inexistant
-        Console.WriteLine($"Compte {account.Number} ajouté avec succès."); //Account.number = clé | account = valeur
+        Accounts[account.Number] = account; // Ajoute un nouveau compte si inexistant
+        Console.WriteLine($"Compte {account.Number} ajouté avec succès."); // Account.number = clé | account = valeur
     }
 
     // Méthode pour supprimer un compte
@@ -62,6 +62,19 @@ class Bank { // La classe Bank représente une banque qui peut gérer plusieurs 
             Console.WriteLine("Le compte n'existe pas.");
         }
     }
+}
+
+interface IAccount 
+{
+    double balance {get;}
+    public void Deposite(double amount);
+    public void Withdraw(double amount);
+}
+
+interface IBankAccount : IAccount
+{
+    public string Number {get; set;}
+
 }
 
 class CurrentAccount {
