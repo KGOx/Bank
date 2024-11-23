@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amnesis\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj": {}
+    "C:\\Users\\templ\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amnesis\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj": {
+    "C:\\Users\\templ\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amnesis\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj",
+        "projectUniqueName": "C:\\Users\\templ\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj",
         "projectName": "Bank",
-        "projectPath": "C:\\Users\\Amnesis\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj",
-        "packagesPath": "C:\\Users\\Amnesis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amnesis\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\obj\\",
+        "projectPath": "C:\\Users\\templ\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\Bank.csproj",
+        "packagesPath": "C:\\Users\\templ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\templ\\OneDrive\\Cours - Ifosup\\2ième année\\Programmation orientée objet\\Bank\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amnesis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\templ\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

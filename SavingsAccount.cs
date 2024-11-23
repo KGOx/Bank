@@ -1,10 +1,11 @@
-class SavingsAccount {
-    private double balance;
-    public string? Number {get; set; }
-    public double Balance {get {return balance;} }
+public class SavingsAccount : Account
+{
     public DateTime DateLastWithdraw {get; set; }
-    public Personne Owner {get; set; }
 
+    public SavingsAccount(string number, DateTime datelastwithdraw, double balance, Personne owner):base(number, owner)
+    {
+        DateLastWithdraw = datelastwithdraw;
+    }
     public void Withdraw(double amount)
     {
         if (amount <= 0){
@@ -16,9 +17,9 @@ class SavingsAccount {
             return;
         }
 
-        balance -= amount; // Retire le montant si les fonds sont suffisants
+        base.Withdraw(amount); // Retire le montant si les fonds sont suffisants
         DateLastWithdraw = DateTime.Now;
-        Console.WriteLine($"Retrait de {amount} effectué. Nouveau solde : {Balance}");
+        Console.WriteLine($"Retrait de {amount}€ effectué. Nouveau solde : {Balance}€");
     }
     public void Deposit(double amount)
     {
@@ -28,7 +29,7 @@ class SavingsAccount {
             return;
         }
 
-        balance += amount; // Ajoute le montant au solde
-        Console.WriteLine($"Dépôt de {amount} effectué. Nouveau solde : {Balance}");
+        base.Deposit(amount); // Ajoute le montant au solde
+        Console.WriteLine($"Dépôt de {amount}€ effectué. Nouveau solde : {Balance}€");
     }
 }

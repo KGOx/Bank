@@ -27,10 +27,11 @@ class Program
         Bank bank = new Bank("Belfius");
         
         // Création et ajout d'un compte courant
-        CurrentAccount currentAccount = new CurrentAccount();
-        currentAccount.Number = "BE14001938544781";
-        currentAccount.balance = 1000;
-        currentAccount.Owner = personne;
+        CurrentAccount currentAccount = new CurrentAccount(
+        "BE14001938544781", // Numéro de compte
+        1000,              // Ligne de crédit (par exemple)
+        personne           // Propriétaire (objet 'personne' que vous avez déjà initialisé)
+        );
         bank.AddAccount(currentAccount);
         
         // Effectuer des actions bancaires
@@ -43,7 +44,7 @@ class Program
         
         // Tester avec un autre utilisateur
         Personne autrePersonne = new Personne("Alice", "Dupont", new DateTime(1990, 8, 15));
-        CurrentAccount autreAccount = new CurrentAccount("BE14009487544781", 500, autrePersonne);
+        CurrentAccount autreAccount = new CurrentAccount("BE14009487541546", 500, autrePersonne);
         bank.AddAccount(autreAccount);
         
         autreAccount.Deposit(200); // Dépôt sur le compte d'Alice

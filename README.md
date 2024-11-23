@@ -29,9 +29,9 @@ Les méthodes :
 
 4. Ajouter une méthode qui retourne le solde d'un compte courant. ✅
 
-5. Permettre à la banque de donner la somme de tous les comptes d'une personne.
+5. Permettre à la banque de donner la somme de tous les comptes d'une personne. ✅
 
-6. Créer une classe « SavingsAccount » pour la gestion d’un carnet d’épargne
+6. Créer une classe « SavingsAccount » pour la gestion d’un carnet d’épargne ✅
 implémentant :
 
 Les propriétés publiques:
@@ -92,3 +92,7 @@ qui additionnera le solde avec le retour de la méthode « CalculInterest ».
 
 22. Au niveau de la classe "Bank" :
 • Ajouter une méthode qui traitera l'évènement "NegativeBalanceAction" en affichant dans ma console "Le numéro de compte {Number} vient de passer en négatif".
+
+23. Dans la classe "Account":
+• Supprimez la déclaration du type délégué "BalanceNegativeDelegate"
+• Changez le type de l'évènement appelé "BalanceNegativeEvent" en utilisatant le délégué "Action" ou "Func".
